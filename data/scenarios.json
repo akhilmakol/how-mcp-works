@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Salary Into Checking",
+    "concept": "Checking accounts",
+    "scenario": "A customer receives monthly salary into a checking account and uses it for rent, groceries, and digital payments.",
+    "what_to_notice": "Checking accounts prioritize access and convenience more than interest earnings."
+  },
+  {
+    "title": "Emergency Fund In Savings",
+    "concept": "Savings accounts",
+    "scenario": "A customer keeps several months of expenses in a savings account to prepare for uncertainty.",
+    "what_to_notice": "Savings accounts are useful when safety and modest interest matter more than daily transactions."
+  },
+  {
+    "title": "Car Loan Approval",
+    "concept": "Loans and credit risk",
+    "scenario": "A bank reviews income, existing debt, and repayment history before approving a car loan.",
+    "what_to_notice": "The lender cares about whether the borrower can and will repay."
+  },
+  {
+    "title": "Busy Withdrawal Day",
+    "concept": "Liquidity and reserves",
+    "scenario": "Many customers withdraw cash on the same day, so the bank must meet demand without disruption.",
+    "what_to_notice": "Banks need liquid funds because deposits may be withdrawn before loans are repaid."
+  },
+  {
+    "title": "Card Payment At A Store",
+    "concept": "Payments",
+    "scenario": "A customer taps a debit card at a grocery store and the payment is settled through the banking system.",
+    "what_to_notice": "A simple customer payment can involve multiple ledgers and institutions behind the scenes."
+  }
+]

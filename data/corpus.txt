@@ -1,0 +1,25 @@
+banking concept: a checking account is designed for everyday spending, bills, and frequent transactions.
+banking concept: a savings account is designed for storing money safely while earning some interest.
+banking concept: interest is the price of borrowing money and the reward for saving money.
+banking concept: a loan gives money today in exchange for repayment over time.
+banking concept: credit risk is the chance that a borrower may fail to repay.
+banking concept: liquidity means having enough accessible cash to meet withdrawals and payments.
+banking concept: reserves are funds the bank keeps available to manage expected withdrawals.
+banking concept: banks usually earn by charging more on loans than they pay on deposits.
+banking concept: deposits are liabilities for a bank because the customer can claim that money.
+banking concept: loans are assets for a bank because they bring future repayment and interest.
+scenario: maria receives her salary into a checking account and uses it for rent, groceries, and utilities.
+scenario: dev keeps emergency savings in a savings account to cover future uncertainty.
+scenario: a bank reviews income, debt, and repayment history before approving a car loan.
+scenario: if many customers withdraw cash on the same day, the bank must manage liquidity carefully.
+scenario: when a customer taps a debit card, money moves from the account toward the merchant.
+scenario: a fixed interest rate keeps loan payments easier to predict over time.
+scenario: a variable interest rate can change, which raises or lowers future payment amounts.
+scenario: missed loan payments increase the lender's view of credit risk.
+scenario: deposit insurance helps small depositors feel safer about keeping money in a bank.
+scenario: banking regulation aims to improve stability, trust, and resilience.
+example: a customer comparing accounts should look at fees, access, interest, and withdrawal rules.
+example: a borrower should compare total repayment cost, not only the advertised monthly payment.
+example: a bank with healthy reserves is better prepared for normal daily withdrawal demand.
+example: payment systems work because multiple institutions record and settle transfers consistently.
+example: financial literacy improves when people understand accounts, loans, interest, and risk together.
