@@ -1,49 +1,46 @@
 # Model Architecture
 
-This repository uses a tiny decoder-only transformer as an educational engine, but the learning experience is organized around banking fundamentals rather than model internals.
+This repository uses a tiny decoder-only transformer as an educational engine, but the learner-facing structure is organized around MCP concepts rather than model internals.
 
-## Banking Concept Architecture
+## MCP Learning Architecture
 
 ```mermaid
 flowchart LR
-    A["Banking topic"] --> B["Plain-English explanation"]
-    B --> C["Worked scenario"]
-    C --> D["Bank balance-sheet view"]
-    D --> E["Customer decision"]
-    E --> F["Outcome and risk"]
+    A["MCP concept"] --> B["Plain-English explanation"]
+    B --> C["Why it matters"]
+    C --> D["Visual flow"]
+    D --> E["Worked implementation scenario"]
+    E --> F["Interactive exploration"]
 ```
 
-## The Core Banking Building Blocks
+## The Core MCP Building Blocks
 
 Every beginner lesson in this repo maps back to a few durable ideas:
 
-1. Deposits
-2. Accounts
-3. Payments
-4. Loans
-5. Interest
-6. Risk management
+1. Hosts
+2. Clients
+3. Servers
+4. Tools
+5. Resources
+6. Prompts
+7. Lifecycle and capability negotiation
 
-## Balance-Sheet Intuition
+## Why Standardization Matters
 
-One of the cleanest ways to understand banking is to separate assets from liabilities:
+Without MCP, each AI app and each external system would need custom integration logic.
 
-- customer deposits are liabilities
-- loans are assets
-- cash and reserves are assets
-- capital provides a cushion against losses
+With MCP, a host can use the same protocol shape across different servers. That reduces integration complexity and improves portability.
 
 ## Why Scenario Learning Helps
 
-Beginners usually learn banking faster when a concept is attached to a concrete everyday case:
+Beginners usually learn MCP faster when each concept is attached to a concrete workflow:
 
-- salary deposit into checking
-- emergency fund in savings
-- car loan application
-- card payment at a store
-- heavy withdrawal day and liquidity pressure
+- an IDE reading local files through an MCP server
+- an assistant calling a search tool through an MCP server
+- a client discovering available prompts from a server
+- a host negotiating capabilities before starting work
 
-That is why the Streamlit app combines text generation with scenario cards.
+That is why the Streamlit app combines generated explanations with scenario cards and flow diagrams.
 
 ## Technical Note
 
@@ -55,4 +52,4 @@ The Python implementation still includes:
 - dropout
 - autoregressive generation
 
-These parts support the generator, while the visible lesson structure stays banking-first.
+These parts support the generator, while the visible lesson structure stays MCP-first.

@@ -21,10 +21,10 @@ from how_mcp_works.data import build_tokenizer_and_data
 from how_mcp_works.inference import load_checkpoint
 
 
-st.set_page_config(page_title="Fundamentals of Banking", layout="wide")
+st.set_page_config(page_title="How MCP Works", layout="wide")
 
-st.title("Fundamentals of Banking")
-st.caption("A visual, interactive walkthrough of core banking ideas, example scenarios, and generated explanations.")
+st.title("How MCP Works")
+st.caption("A visual, interactive walkthrough of what MCP is, why we need it, and how it is implemented step by step.")
 
 corpus_path = Path("data") / "corpus.txt"
 checkpoint_path = Path("artifacts") / "checkpoint.pt"
@@ -32,7 +32,7 @@ scenarios_path = Path("data") / "scenarios.json"
 
 with st.sidebar:
     st.header("Controls")
-    prompt = st.text_area("Ask about banking", value="banking concept: savings account")
+    prompt = st.text_area("Ask about MCP", value="what is mcp: ")
     max_new_tokens = st.slider("New tokens", min_value=10, max_value=200, value=80, step=10)
     temperature = st.slider("Temperature", min_value=0.2, max_value=1.8, value=0.9, step=0.1)
     top_k = st.slider("Top-k", min_value=1, max_value=20, value=8, step=1)
@@ -52,13 +52,13 @@ with intro_col:
     st.code(str(encoded))
 
 with concept_col:
-    st.subheader("What to learn")
+    st.subheader("What this project explains")
     st.markdown(
         """
-        - what checking and savings accounts do
-        - how interest and loans work
-        - why banks manage liquidity and risk
-        - how everyday customer scenarios map to banking fundamentals
+        - what MCP is
+        - why MCP is useful
+        - how hosts, clients, and servers interact
+        - how tools, resources, and prompts fit into an implementation
         """
     )
 
@@ -83,7 +83,7 @@ labels = [repr(tokenizer.itos[idx.item()]) for idx in top_indices]
 ax.bar(labels, top_probs.tolist(), color="#2a6f97")
 ax.set_ylabel("Probability")
 ax.set_xlabel("Candidate token")
-ax.set_title("Model belief while continuing a banking explanation")
+ax.set_title("Model belief while continuing an MCP explanation")
 st.pyplot(fig)
 
 result_col, details_col = st.columns(2)
@@ -101,7 +101,7 @@ with details_col:
         }
     )
 
-st.subheader("Example Banking Scenarios")
+st.subheader("Interactive MCP Scenarios")
 if scenarios_path.exists():
     scenarios = json.loads(scenarios_path.read_text(encoding="utf-8"))
     selected_title = st.selectbox("Choose a scenario", [item["title"] for item in scenarios])

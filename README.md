@@ -1,15 +1,21 @@
 # how-mcp-works
 
-An open source educational project for learning the fundamentals of banking through interactive documentation, scenario-based examples, and a compact local AI demo.
+An open source educational project that explains the Model Context Protocol (MCP) from first principles through visual documentation, interactive walkthroughs, and a compact local AI demo.
 
-This repository combines:
+This repository is organized around three learner questions:
 
-- visual-first documentation for core banking concepts
-- a small PyTorch GPT-style model trained on a banking learning corpus
-- a Streamlit application for exploring concepts, prompts, and worked scenarios
+- What is MCP?
+- Why do we need MCP?
+- How is MCP implemented in practice?
+
+It combines:
+
+- visual-first documentation for MCP concepts and architecture
+- a small PyTorch GPT-style model trained on an MCP learning corpus
+- a Streamlit application for interactive step-by-step exploration
 - beginner-friendly code intended for study, extension, and contribution
 
-This README is structured in the style commonly seen in mature FINOS projects and OSPO-managed repositories, with clear guidance on project scope, usage, contribution, governance, security, and community expectations.
+This README follows an OSPO-style structure inspired by mature FINOS project documentation, with explicit sections for scope, usage, contribution, governance, security, and support.
 
 ## Project Status
 
@@ -17,36 +23,47 @@ Status: Active
 
 Stage: Educational / community-maintained
 
-This is an educational repository, not a production banking platform, accounting system, or regulated financial service. It is designed to help learners understand core banking ideas such as deposits, loans, interest, liquidity, and payment flows.
+This is an educational repository, not an official MCP SDK, server framework, or compliance reference. It is designed to help learners understand the shape of MCP systems and the reasoning behind the protocol.
+
+## Objective
+
+The objective of this project is to make MCP understandable to engineers, students, and technical teams by presenting it as a visual interactive system rather than a dense specification alone.
+
+The project explains:
+
+- what MCP is as an open protocol for connecting AI applications to external context and capabilities
+- why MCP is needed when models must work with tools, resources, prompts, and real systems
+- how MCP is implemented through hosts, clients, servers, transports, capability negotiation, and request flows
 
 ## Why This Project Exists
 
-Banking is often taught either too abstractly or too operationally. This project tries to bridge that gap by combining:
+MCP becomes much easier to understand when learners can see the moving parts together:
 
-- first-principles explanations
-- concrete customer and bank scenarios
-- runnable code that learners can inspect and modify
-- an interactive UI for experimentation
+- the host application
+- the MCP client connection
+- the MCP server
+- the exposed tools, resources, and prompts
+- the request and response lifecycle
 
-The goal is to make banking concepts easier to understand without requiring prior domain expertise.
+This project tries to bridge the gap between conceptual explanations and working intuition.
 
 ## Scope
 
-The repository currently covers:
+The repository currently focuses on:
 
-- checking and savings accounts
-- deposits and withdrawals
-- interest and repayment
-- loans and credit risk
-- liquidity and reserves
-- payment flow scenarios
+- the purpose of MCP
+- host, client, and server roles
+- tools, resources, and prompts
+- transport and session lifecycle concepts
+- why standardization matters for agentic systems
+- visual step-by-step implementation walkthroughs
 
 The repository does not attempt to provide:
 
-- financial advice
-- regulatory interpretation
-- accounting or treasury controls for real institutions
-- production-grade model quality for business use
+- the full MCP specification text
+- production-grade MCP infrastructure
+- exhaustive coverage of every protocol revision
+- official guidance on security or compliance for all MCP deployments
 
 ## Repository Structure
 
@@ -55,13 +72,13 @@ The repository does not attempt to provide:
 - `scripts/`
   Command-line entry points for preparing data, training the model, and generating text.
 - `docs/`
-  Visual-first documentation and Mermaid diagrams for banking concepts.
+  Visual-first documentation and Mermaid diagrams for MCP concepts.
 - `data/`
   Educational training corpus and structured example scenarios.
 - `tests/`
   Smoke tests for tokenizer and model behavior.
 - `streamlit_app.py`
-  Interactive application for exploring banking concepts and generated explanations.
+  Interactive application for exploring MCP concepts and implementation steps.
 
 ## Getting Started
 
@@ -93,10 +110,10 @@ python -m scripts.train --steps 300 --eval-interval 50
 
 Training writes artifacts to `artifacts/`, including a checkpoint and metrics summary.
 
-### Generate Banking Explanations
+### Generate MCP Explanations
 
 ```bash
-python -m scripts.generate --prompt "banking concept: savings account" --max-new-tokens 120
+python -m scripts.generate --prompt "what is mcp: " --max-new-tokens 120
 ```
 
 ### Run the Interactive UI
@@ -113,43 +130,43 @@ Start here:
 2. [docs/02-model-architecture.md](docs/02-model-architecture.md)
 3. [docs/03-training-and-inference.md](docs/03-training-and-inference.md)
 
-These documents explain the domain concepts first and the implementation second.
+These documents are organized around what MCP is, why it matters, and how implementation flows work.
 
 ## Example Learning Scenarios
 
-- A customer receives salary into a checking account and uses it for bills and daily spending.
-- A customer builds an emergency fund in a savings account.
-- A borrower applies for a car loan and the bank evaluates risk.
-- A bank experiences a high-withdrawal day and must manage liquidity.
-- A debit card purchase moves funds through the payment system.
+- An AI IDE needs a standard way to call a filesystem server.
+- A host application connects to multiple MCP servers without custom integration logic per server.
+- A team wants to expose internal documentation as MCP resources.
+- A tool server exposes actions like search, file read, or query execution.
+- A client and server negotiate capabilities before exchanging context.
 
 ## Architecture Overview
 
 ```mermaid
 flowchart LR
-    A["Banking question"] --> B["Concept explanation"]
-    B --> C["Worked scenario"]
-    C --> D["Interactive exploration"]
-    D --> E["Generated continuation"]
+    A["User asks AI app for help"] --> B["Host selects an MCP client connection"]
+    B --> C["MCP server exposes tools, resources, or prompts"]
+    C --> D["Host uses returned context in the model workflow"]
+    D --> E["User sees a grounded or actionable result"]
 ```
 
 ## Intended Audience
 
 This project is useful for:
 
-- students and self-learners
-- internal training teams
-- developer advocates and technical educators
-- engineers interested in financial domain onboarding
+- developers learning MCP for the first time
+- teams evaluating AI integration architecture
+- technical educators
+- students exploring tool-using AI systems
 
 ## Roadmap
 
 Current improvement areas include:
 
-- richer banking scenario coverage
-- clearer balance-sheet visualizations
+- richer MCP flow visualizations
+- stronger scenario coverage for tools, resources, and prompts
+- optional mock protocol traces in the UI
 - stronger tests and packaging hygiene
-- optional structured lessons beyond text generation
 
 Proposals and pull requests are welcome.
 
@@ -205,5 +222,5 @@ This repository is released under the MIT License. See [LICENSE](LICENSE).
 
 ## Acknowledgements
 
-This repository is not a FINOS-hosted project. Its README structure and open source hygiene were shaped using public FINOS governance and community materials as reference points for OSPO-style project presentation.
+This repository is not an official MCP project. The explanation in this repo is informed by the public Model Context Protocol documentation and uses an OSPO-style presentation pattern inspired by public FINOS project materials.
 

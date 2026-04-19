@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "how-mcp-works"
 version = "0.1.0"
-description = "Visual, interactive educational repository for learning the fundamentals of banking with a tiny GPT-style model."
+description = "Visual, interactive educational repository for learning what MCP is, why it matters, and how it is implemented."
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [

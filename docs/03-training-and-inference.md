@@ -1,37 +1,37 @@
 # Training And Inference
 
-## Banking Topic Coverage
+## MCP Topic Coverage
 
-The bundled dataset is intentionally small, but it covers the beginner banking concepts most people need first:
+The bundled dataset is intentionally small, but it covers the beginner MCP concepts most people need first:
 
-- checking and savings accounts
-- deposits and withdrawals
-- interest and repayment
-- loans and credit risk
-- liquidity and reserves
-- payment flows
+- what MCP is
+- why standardization helps
+- host, client, and server roles
+- tools, resources, and prompts
+- lifecycle and capability negotiation
+- request and response flow intuition
 
 ## Example Scenarios
 
 ```mermaid
 flowchart LR
-    A["Maria gets paid"] --> B["Salary enters checking account"]
-    B --> C["Bills are paid"]
-    C --> D["Remaining cash may move to savings"]
+    A["User asks AI IDE to inspect a project"] --> B["Host selects filesystem MCP server"]
+    B --> C["Server exposes file read capability"]
+    C --> D["Host uses results in the response"]
 ```
 
 ```mermaid
 flowchart LR
-    A["Borrower requests a loan"] --> B["Bank reviews income and risk"]
-    B --> C["Loan is approved or declined"]
-    C --> D["Approved loan is repaid with interest"]
+    A["Host starts a session"] --> B["Client and server initialize"]
+    B --> C["Capabilities are negotiated"]
+    C --> D["Tools and resources become available"]
 ```
 
 ## Generation Pipeline
 
 ```mermaid
 flowchart LR
-    A["User enters a banking prompt"] --> B["Encode prompt"]
+    A["User enters an MCP question"] --> B["Encode prompt"]
     B --> C["Crop to context window"]
     C --> D["Forward pass"]
     D --> E["Take final-step logits"]
@@ -43,7 +43,8 @@ flowchart LR
 
 ## What To Explore In The App
 
-- Try prompts like `banking concept: interest`
-- Try prompts like `scenario: a customer compares checking and savings`
+- Try prompts like `what is mcp: `
+- Try prompts like `why mcp: `
+- Try prompts like `how mcp works: `
 - Compare low-temperature and high-temperature outputs
 - Inspect the next-token probabilities to see how the explanation is formed

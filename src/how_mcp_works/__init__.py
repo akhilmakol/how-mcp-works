@@ -1,4 +1,4 @@
-"""Educational mini GPT-style model and banking learning utilities."""
+"""Educational mini GPT-style model and MCP learning utilities."""
 
 from .config import ModelConfig, TrainingConfig
 from .inference import load_checkpoint_and_generate

@@ -13,9 +13,9 @@ from how_mcp_works.inference import load_checkpoint_and_generate
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Generate beginner-friendly text about banking fundamentals.")
+    parser = argparse.ArgumentParser(description="Generate beginner-friendly text about MCP concepts and flows.")
     parser.add_argument("--checkpoint-path", type=Path, default=Path("artifacts") / "checkpoint.pt")
-    parser.add_argument("--prompt", type=str, default="banking concept: savings account")
+    parser.add_argument("--prompt", type=str, default="what is mcp: ")
     parser.add_argument("--max-new-tokens", type=int, default=120)
     parser.add_argument("--temperature", type=float, default=0.9)
     parser.add_argument("--top-k", type=int, default=8)
