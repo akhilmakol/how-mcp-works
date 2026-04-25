@@ -2,35 +2,52 @@
   <rect width="1200" height="760" rx="32" fill="#F4F6FB"/>
   <rect x="40" y="40" width="1120" height="680" rx="28" fill="#FCFDFF" stroke="#D6DCE8" stroke-width="2"/>
   <text x="80" y="110" fill="#1B2740" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">How is MCP implemented in practice?</text>
-  <text x="80" y="150" fill="#55637D" font-family="Segoe UI, Arial, sans-serif" font-size="24">A typical session moves through setup, capability discovery, tool use, and grounded response generation.</text>
+  <text x="80" y="150" fill="#55637D" font-family="Segoe UI, Arial, sans-serif" font-size="24">
+    <tspan x="80" dy="0">A typical session moves through setup, capability discovery, tool use,</tspan>
+    <tspan x="80" dy="30">and grounded response generation.</tspan>
+  </text>
 
-  <rect x="80" y="220" width="220" height="120" rx="22" fill="#1B2740"/>
-  <text x="116" y="270" fill="#F9FAFB" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">1. Connect</text>
-  <text x="116" y="308" fill="#D8E0EA" font-family="Segoe UI, Arial, sans-serif" font-size="21">Host starts a client</text>
-  <text x="116" y="334" fill="#D8E0EA" font-family="Segoe UI, Arial, sans-serif" font-size="21">session to a server.</text>
+  <rect x="80" y="245" width="220" height="130" rx="22" fill="#1B2740"/>
+  <text x="112" y="295" fill="#F9FAFB" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">1. Connect</text>
+  <text x="112" y="328" fill="#D8E0EA" font-family="Segoe UI, Arial, sans-serif" font-size="20">
+    <tspan x="112" dy="0">Host starts a client</tspan>
+    <tspan x="112" dy="24">session to a server.</tspan>
+  </text>
 
-  <rect x="340" y="220" width="220" height="120" rx="22" fill="#275D8C"/>
-  <text x="370" y="270" fill="#F8FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">2. Negotiate</text>
-  <text x="372" y="308" fill="#DCEBFA" font-family="Segoe UI, Arial, sans-serif" font-size="21">They exchange</text>
-  <text x="378" y="334" fill="#DCEBFA" font-family="Segoe UI, Arial, sans-serif" font-size="21">capabilities.</text>
+  <rect x="340" y="245" width="220" height="130" rx="22" fill="#275D8C"/>
+  <text x="366" y="295" fill="#F8FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">2. Negotiate</text>
+  <text x="372" y="328" fill="#DCEBFA" font-family="Segoe UI, Arial, sans-serif" font-size="20">
+    <tspan x="372" dy="0">They exchange</tspan>
+    <tspan x="372" dy="24">capabilities.</tspan>
+  </text>
 
-  <rect x="600" y="220" width="220" height="120" rx="22" fill="#2C6E63"/>
-  <text x="638" y="270" fill="#F7FFFD" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">3. Discover</text>
-  <text x="640" y="308" fill="#DDF2EC" font-family="Segoe UI, Arial, sans-serif" font-size="21">Host sees tools,</text>
-  <text x="632" y="334" fill="#DDF2EC" font-family="Segoe UI, Arial, sans-serif" font-size="21">resources, prompts.</text>
+  <rect x="600" y="245" width="220" height="130" rx="22" fill="#2C6E63"/>
+  <text x="632" y="295" fill="#F7FFFD" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">3. Discover</text>
+  <text x="632" y="328" fill="#DDF2EC" font-family="Segoe UI, Arial, sans-serif" font-size="20">
+    <tspan x="632" dy="0">Host sees tools,</tspan>
+    <tspan x="632" dy="24">resources, prompts.</tspan>
+  </text>
 
-  <rect x="860" y="220" width="260" height="120" rx="22" fill="#C96B3B"/>
-  <text x="904" y="270" fill="#FFF8F3" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">4. Use + Reply</text>
-  <text x="906" y="308" fill="#FFE7DB" font-family="Segoe UI, Arial, sans-serif" font-size="21">Host calls a tool and</text>
-  <text x="910" y="334" fill="#FFE7DB" font-family="Segoe UI, Arial, sans-serif" font-size="21">grounds its response.</text>
+  <rect x="860" y="245" width="260" height="130" rx="22" fill="#C96B3B"/>
+  <text x="898" y="295" fill="#FFF8F3" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">4. Use + Reply</text>
+  <text x="896" y="328" fill="#FFE7DB" font-family="Segoe UI, Arial, sans-serif" font-size="20">
+    <tspan x="896" dy="0">Host calls a tool and</tspan>
+    <tspan x="896" dy="24">grounds its response.</tspan>
+  </text>
 
-  <path d="M310 280H330" stroke="#1B2740" stroke-width="8" stroke-linecap="round"/>
-  <path d="M570 280H590" stroke="#1B2740" stroke-width="8" stroke-linecap="round"/>
-  <path d="M830 280H850" stroke="#1B2740" stroke-width="8" stroke-linecap="round"/>
+  <path d="M310 310H330" stroke="#1B2740" stroke-width="8" stroke-linecap="round"/>
+  <path d="M570 310H590" stroke="#1B2740" stroke-width="8" stroke-linecap="round"/>
+  <path d="M830 310H850" stroke="#1B2740" stroke-width="8" stroke-linecap="round"/>
 
   <rect x="80" y="420" width="1040" height="220" rx="24" fill="#EEF3F9" stroke="#CCD8E8" stroke-width="2"/>
   <text x="120" y="475" fill="#1B2740" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">Example practice flow</text>
   <text x="120" y="525" fill="#43516D" font-family="Segoe UI, Arial, sans-serif" font-size="24">User asks an AI IDE to explain a repo.</text>
-  <text x="120" y="565" fill="#43516D" font-family="Segoe UI, Arial, sans-serif" font-size="24">The host connects to a filesystem MCP server and learns that file-read tools are available.</text>
-  <text x="120" y="605" fill="#43516D" font-family="Segoe UI, Arial, sans-serif" font-size="24">It requests the needed files, brings the results into the model workflow, and answers with grounded context.</text>
+  <text x="120" y="565" fill="#43516D" font-family="Segoe UI, Arial, sans-serif" font-size="23">
+    <tspan x="120" dy="0">The host connects to a filesystem MCP server and learns</tspan>
+    <tspan x="120" dy="28">that file-read tools are available.</tspan>
+  </text>
+  <text x="120" y="633" fill="#43516D" font-family="Segoe UI, Arial, sans-serif" font-size="23">
+    <tspan x="120" dy="0">It requests the needed files, brings the results into the</tspan>
+    <tspan x="120" dy="28">model workflow, and answers with grounded context.</tspan>
+  </text>
 </svg>
