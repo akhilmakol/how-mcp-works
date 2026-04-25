@@ -1,6 +1,6 @@
-<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="760" rx="32" fill="#F4F6FB"/>
-  <rect x="40" y="40" width="1120" height="680" rx="28" fill="#FCFDFF" stroke="#D6DCE8" stroke-width="2"/>
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="32" fill="#F4F6FB"/>
+  <rect x="40" y="40" width="1120" height="720" rx="28" fill="#FCFDFF" stroke="#D6DCE8" stroke-width="2"/>
   <text x="80" y="110" fill="#1B2740" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">How is MCP implemented in practice?</text>
   <text x="80" y="150" fill="#55637D" font-family="Segoe UI, Arial, sans-serif" font-size="24">
     <tspan x="80" dy="0">A typical session moves through setup, capability discovery, tool use,</tspan>
@@ -39,14 +39,14 @@
   <path d="M570 310H590" stroke="#1B2740" stroke-width="8" stroke-linecap="round"/>
   <path d="M830 310H850" stroke="#1B2740" stroke-width="8" stroke-linecap="round"/>
 
-  <rect x="80" y="420" width="1040" height="220" rx="24" fill="#EEF3F9" stroke="#CCD8E8" stroke-width="2"/>
+  <rect x="80" y="420" width="1040" height="270" rx="24" fill="#EEF3F9" stroke="#CCD8E8" stroke-width="2"/>
   <text x="120" y="475" fill="#1B2740" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">Example practice flow</text>
   <text x="120" y="525" fill="#43516D" font-family="Segoe UI, Arial, sans-serif" font-size="24">User asks an AI IDE to explain a repo.</text>
   <text x="120" y="565" fill="#43516D" font-family="Segoe UI, Arial, sans-serif" font-size="23">
     <tspan x="120" dy="0">The host connects to a filesystem MCP server and learns</tspan>
     <tspan x="120" dy="28">that file-read tools are available.</tspan>
   </text>
-  <text x="120" y="633" fill="#43516D" font-family="Segoe UI, Arial, sans-serif" font-size="23">
+  <text x="120" y="645" fill="#43516D" font-family="Segoe UI, Arial, sans-serif" font-size="23">
     <tspan x="120" dy="0">It requests the needed files, brings the results into the</tspan>
     <tspan x="120" dy="28">model workflow, and answers with grounded context.</tspan>
   </text>
