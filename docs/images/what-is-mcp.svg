@@ -1,0 +1,35 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="32" fill="#F7F4EC"/>
+  <rect x="40" y="40" width="1120" height="640" rx="28" fill="#FFFDF8" stroke="#D9D1BE" stroke-width="2"/>
+  <text x="80" y="110" fill="#18212F" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">What is MCP?</text>
+  <text x="80" y="150" fill="#4A5565" font-family="Segoe UI, Arial, sans-serif" font-size="24">A shared protocol that lets AI apps connect to external tools, resources, and prompts in a standard way.</text>
+
+  <rect x="80" y="220" width="240" height="200" rx="24" fill="#18212F"/>
+  <text x="110" y="280" fill="#F9FAFB" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">Host App</text>
+  <text x="110" y="320" fill="#D8E0EA" font-family="Segoe UI, Arial, sans-serif" font-size="22">The AI product</text>
+  <text x="110" y="350" fill="#D8E0EA" font-family="Segoe UI, Arial, sans-serif" font-size="22">the user interacts</text>
+  <text x="110" y="380" fill="#D8E0EA" font-family="Segoe UI, Arial, sans-serif" font-size="22">with directly.</text>
+
+  <rect x="480" y="220" width="240" height="200" rx="24" fill="#2C6E63"/>
+  <text x="522" y="280" fill="#F9FAFB" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">MCP Layer</text>
+  <text x="512" y="320" fill="#DDF2EC" font-family="Segoe UI, Arial, sans-serif" font-size="22">Client connection,</text>
+  <text x="524" y="350" fill="#DDF2EC" font-family="Segoe UI, Arial, sans-serif" font-size="22">capability exchange,</text>
+  <text x="534" y="380" fill="#DDF2EC" font-family="Segoe UI, Arial, sans-serif" font-size="22">request flow.</text>
+
+  <rect x="880" y="220" width="240" height="200" rx="24" fill="#C96B3B"/>
+  <text x="926" y="280" fill="#FFF8F3" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">MCP Server</text>
+  <text x="948" y="320" fill="#FFE7DB" font-family="Segoe UI, Arial, sans-serif" font-size="22">Exposes tools,</text>
+  <text x="932" y="350" fill="#FFE7DB" font-family="Segoe UI, Arial, sans-serif" font-size="22">resources, and</text>
+  <text x="960" y="380" fill="#FFE7DB" font-family="Segoe UI, Arial, sans-serif" font-size="22">prompts.</text>
+
+  <path d="M340 320H456" stroke="#18212F" stroke-width="8" stroke-linecap="round"/>
+  <path d="M438 300L478 320L438 340" stroke="#18212F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M740 320H856" stroke="#18212F" stroke-width="8" stroke-linecap="round"/>
+  <path d="M838 300L878 320L838 340" stroke="#18212F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="80" y="500" width="1040" height="120" rx="24" fill="#EEF3F7" stroke="#CCD7E1" stroke-width="2"/>
+  <circle cx="130" cy="560" r="22" fill="#18212F"/>
+  <text x="122" y="568" fill="#F9FAFB" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">1</text>
+  <text x="170" y="552" fill="#18212F" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">User asks the host for help</text>
+  <text x="170" y="586" fill="#4A5565" font-family="Segoe UI, Arial, sans-serif" font-size="22">The host can call standardized MCP servers instead of hard-coding every integration.</text>
+</svg>

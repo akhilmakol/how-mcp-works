@@ -15,6 +15,64 @@ It combines:
 - a Streamlit application for interactive step-by-step exploration
 - beginner-friendly code intended for study, extension, and contribution
 
+## Visual Guide
+
+This repository is designed to answer three beginner questions quickly and visually:
+
+- What is MCP?
+- Why do we need MCP?
+- How is MCP implemented in practice?
+
+Each section below gives the short answer first and then links out to the deeper walkthroughs in `docs/`.
+
+## What Is MCP?
+
+MCP is an open protocol that gives AI applications a standard way to connect to external capabilities. Instead of every AI app inventing its own custom integration format, MCP defines a shared structure for connecting a host application to servers that expose tools, resources, and prompts.
+
+![What is MCP?](docs/images/what-is-mcp.svg)
+
+In simple terms:
+
+- the host is the AI application the user interacts with
+- the client is the connection layer the host opens for a server
+- the server exposes useful capabilities in a predictable way
+- the model workflow can then use those capabilities to produce grounded results
+
+Read more in [docs/01-first-principles.md](docs/01-first-principles.md).
+
+## Why Do We Need MCP?
+
+Without MCP, every AI product would need to build and maintain one-off adapters for every external system it wants to use. That creates duplicated effort, inconsistent behavior, and fragile integrations.
+
+MCP matters because it standardizes:
+
+- capability discovery
+- request and response patterns
+- host-to-server interoperability
+- the way tools, resources, and prompts are exposed
+
+![Why do we need MCP?](docs/images/why-mcp.svg)
+
+The practical result is that one host can learn a reusable integration pattern and apply it across many servers instead of starting from scratch each time.
+
+Read more in [docs/02-model-architecture.md](docs/02-model-architecture.md).
+
+## How Is MCP Implemented In Practice?
+
+In practice, MCP usually looks like a session flow:
+
+1. A host decides external context is needed.
+2. It opens or uses an MCP client connection to a server.
+3. The client and server negotiate capabilities.
+4. The host discovers tools, resources, or prompts.
+5. The host calls what it needs and uses the returned context in the model workflow.
+
+![How is MCP implemented in practice?](docs/images/how-mcp-implemented.svg)
+
+This repository demonstrates that learning journey through visual docs, a small educational model, and a Streamlit app that walks through MCP concepts step by step.
+
+Read more in [docs/03-training-and-inference.md](docs/03-training-and-inference.md).
+
 This README follows an OSPO-style structure inspired by mature FINOS project documentation, with explicit sections for scope, usage, contribution, governance, security, and support.
 
 ## Project Status
@@ -223,4 +281,3 @@ This repository is released under the MIT License. See [LICENSE](LICENSE).
 ## Acknowledgements
 
 This repository is not an official MCP project. The explanation in this repo is informed by the public Model Context Protocol documentation and uses an OSPO-style presentation pattern inspired by public FINOS project materials.
-

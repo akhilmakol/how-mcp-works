@@ -1,0 +1,25 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="32" fill="#F5F8F2"/>
+  <rect x="40" y="40" width="1120" height="640" rx="28" fill="#FCFEFA" stroke="#D0DBCB" stroke-width="2"/>
+  <text x="80" y="110" fill="#1F2A1F" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">Why do we need MCP?</text>
+  <text x="80" y="150" fill="#536253" font-family="Segoe UI, Arial, sans-serif" font-size="24">Without MCP, every AI app needs custom glue code for every system. MCP replaces that with one reusable contract.</text>
+
+  <rect x="80" y="220" width="470" height="330" rx="24" fill="#FFF4E8" stroke="#E5C7A6" stroke-width="2"/>
+  <text x="120" y="275" fill="#8A4B1A" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">Without MCP</text>
+  <text x="120" y="330" fill="#6B4A33" font-family="Segoe UI, Arial, sans-serif" font-size="24">AI App A → Filesystem adapter</text>
+  <text x="120" y="370" fill="#6B4A33" font-family="Segoe UI, Arial, sans-serif" font-size="24">AI App A → Search adapter</text>
+  <text x="120" y="410" fill="#6B4A33" font-family="Segoe UI, Arial, sans-serif" font-size="24">AI App B → Filesystem adapter</text>
+  <text x="120" y="450" fill="#6B4A33" font-family="Segoe UI, Arial, sans-serif" font-size="24">AI App B → Search adapter</text>
+  <text x="120" y="505" fill="#A35B20" font-family="Segoe UI, Arial, sans-serif" font-size="22">Result: repeated integration work, inconsistent behavior, slower adoption.</text>
+
+  <rect x="650" y="220" width="470" height="330" rx="24" fill="#E8F4EC" stroke="#A9CDB3" stroke-width="2"/>
+  <text x="690" y="275" fill="#215C37" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">With MCP</text>
+  <text x="690" y="330" fill="#365143" font-family="Segoe UI, Arial, sans-serif" font-size="24">AI App A → MCP</text>
+  <text x="690" y="370" fill="#365143" font-family="Segoe UI, Arial, sans-serif" font-size="24">AI App B → MCP</text>
+  <text x="690" y="430" fill="#365143" font-family="Segoe UI, Arial, sans-serif" font-size="24">MCP → Filesystem server</text>
+  <text x="690" y="470" fill="#365143" font-family="Segoe UI, Arial, sans-serif" font-size="24">MCP → Search server</text>
+  <text x="690" y="505" fill="#215C37" font-family="Segoe UI, Arial, sans-serif" font-size="22">Result: one pattern for discovery, negotiation, and request handling.</text>
+
+  <rect x="80" y="590" width="1040" height="50" rx="18" fill="#1F2A1F"/>
+  <text x="130" y="624" fill="#F5F8F2" font-family="Segoe UI, Arial, sans-serif" font-size="24">MCP turns one-off integrations into a repeatable ecosystem pattern.</text>
+</svg>
